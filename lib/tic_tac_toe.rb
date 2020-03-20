@@ -31,7 +31,7 @@ end
 
 # Clearly defines if a position is occupied on the board
 def position_taken?(board, location)
-  board[location] != " " && board[location] != ""
+  board[location] != " " && board[location] != "" && board[location] != nil
 end
 
 # Checks to see if a move is valid
