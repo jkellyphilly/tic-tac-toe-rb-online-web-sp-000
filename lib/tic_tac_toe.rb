@@ -23,3 +23,8 @@ end
 def input_to_index(user_input)
   user_input.to_i - 1
 end
+
+# Update the board with a player's move
+def move(board, index, current_player = "X")
+  board[index] = current_player
+end
