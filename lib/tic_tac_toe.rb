@@ -25,8 +25,8 @@ def input_to_index(user_input)
 end
 
 # Update the board with a player's move
-def move(board, index, current_player)
-  board[index] = current_player
+def move(board, index, x_or_o)
+  board[index] = x_or_o
 end
 
 # Clearly defines if a position is occupied on the board
