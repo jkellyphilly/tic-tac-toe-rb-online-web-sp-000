@@ -55,7 +55,7 @@ def turn(board)
   display_board(board)
 end
 
-# count how many turns have been played, given the current board
+# Count how many turns have been played, given the current board
 def turn_count(board)
   counter = 0
   board.each do | space |
@@ -66,7 +66,7 @@ def turn_count(board)
   counter
 end
 
-# determine whose turn it is based on the number of turns that have been played
+# Determine whose turn it is based on the number of turns that have been played
 # ASSUMPTION: player "X" goes first
 def current_player(board)
   output = (turn_count(board) % 2) == 0 ? "X" : "O"
