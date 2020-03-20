@@ -42,17 +42,15 @@ end
 # Helper method for getting user's input and moving on the board
 def turn(board)
   puts "Please enter 1-9:"
-  #user_input = gets.strip.to_i
-  user_index = input_to_index(gets.strip.to_i)
-
-  # until the user's input is valid, keep running the test
-  until valid_move?(board, user_index)
-    puts "Not a valid user input."
-    user_index = input_to_index(gets.strip.to_i)
+  input = gets.strip
+  index = input_to_index(input)
+  if valid_move?(board, index)
+    move(board, index)
+    display_board(board)
+  else
+    puts "Not a valid move."
+    turn(board)
   end
-
-  move(board, user_index)
-  display_board(board)
 end
 
 # Count how many turns have been played, given the current board
