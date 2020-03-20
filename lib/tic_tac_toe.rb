@@ -54,3 +54,14 @@ def turn(board)
   move(board, user_index)
   display_board(board)
 end
+
+# count how many turns have been played, given the current board
+def turn_count(board)
+  counter = 0
+  board.each do | space |
+    if (space == "X" || space == "O")
+      counter += 1
+    end
+  end
+  counter
+end
