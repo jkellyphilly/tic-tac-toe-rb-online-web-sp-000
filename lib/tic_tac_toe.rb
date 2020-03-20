@@ -28,3 +28,8 @@ end
 def move(board, index, current_player)
   board[index] = current_player
 end
+
+# Clearly defines if a position is occupied on the board
+def position_taken?(board, location)
+  board[location] != " " && board[location] != ""
+end
