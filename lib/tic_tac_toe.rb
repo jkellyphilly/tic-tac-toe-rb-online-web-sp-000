@@ -33,3 +33,12 @@ end
 def position_taken?(board, location)
   board[location] != " " && board[location] != ""
 end
+
+# Checks to see if a move is valid
+def valid_move?(board, index)
+  if (index < 0 || index > 8)
+    return false
+  else
+    return !position_taken?(board, index)
+  end
+end
