@@ -25,6 +25,6 @@ def input_to_index(user_input)
 end
 
 # Update the board with a player's move
-def move(board, index, current_player = "X")
+def move(board, index, current_player)
   board[index] = current_player
 end
