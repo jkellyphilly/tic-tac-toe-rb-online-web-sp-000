@@ -80,3 +80,23 @@ def won?(board)
   end
   false
 end
+
+# Determine if the board is full
+def full?(board)
+  board.all? {|space| (space == "X" || space == "O")}
+end
+
+# Determine if the game is a draw
+def draw?(board)
+  full?(board) && !won?(board)
+end
+
+# Determine if the game is over
+def over?(board)
+  draw?(board) || won?(board) || full?(board)
+end
+
+# Determine the winner
+def winner(board)
+  won?(board) ? board[won?(board)[0]] : nil
+end
