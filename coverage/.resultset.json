@@ -2,9 +2,19 @@
   "RSpec": {
     "coverage": {
       "/home/outstanding-firmware-8223/tic-tac-toe-rb-online-web-sp-000/lib/tic_tac_toe.rb": [
-
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1584725586
+    "timestamp": 1584725681
   }
 }
